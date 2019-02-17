@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0067be</color>
+    <color name="colorPrimaryDark">#0067be</color>
+    <color name="colorAccent">#0067be</color>
+
+    <color name="colorBlueFont">#0067be</color>
+    <color name="colorWhiteFont">#ffffff</color>
+    <color name="Bg_privecy_policy">#e5e5e5</color>
+    <color name="Font_grey">#797979</color>
+
+    <color name="Font_black">#000000</color>
+</resources>

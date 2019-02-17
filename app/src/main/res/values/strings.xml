@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HisNotify</string>
+    <string name="service_name">Notification Services</string>
+    <string name="client_Id">392037291698-6j70uejrem0mm5qks3fuss0pa7ajucbu.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="AppNick_name">HisNotify</string>
+    <string name="CompanyName">H4R5</string>
+
+    <string name="i_agree">I Agree</string>
+    <string name="st_text">ST</string>
+    <string name="art_text">ART</string>
+</resources>

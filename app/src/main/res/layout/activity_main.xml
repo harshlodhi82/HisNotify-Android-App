@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_blue"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/corbel_font"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhiteFont"
+            android:layout_alignParentStart="true"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/shareBtn"
+            android:layout_toStartOf="@+id/ac_profile"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_share_btn"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/ac_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_circle"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"/>
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/FragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/toolBar"
+        android:layout_below="@+id/actionBar"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/HomeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_action_home"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AllNoty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_action_all_notification"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_action_profile"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+
+        <!--<Button-->
+            <!--android:id="@+id/HomeBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Home" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/AllNoty"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="All Noty" />-->
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
